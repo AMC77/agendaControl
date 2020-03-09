@@ -1,3 +1,14 @@
 <resources>
-    <string name="app_name">agendaControl</string>
+    <string name="app_name">Mis trabajos realizados</string>
+    <string name="txt_Contraseña">Introduce la contraseña</string>
+    <string name="et_Contrasena">Solo numeros</string>
+    <string name="txt_recuperaContra">¿Has olvidado la contraseña?</string>
+    <string name="txt_nombreNombreEmpresa">Nombre de la empresa</string>
+    <string name="txt_direccion">Direccion de la empresa</string>
+    <string name="txt_telefonoEmpresa">Telefono de la empresa</string>
+    <string name="txt_sector">Sector de la empresa</string>
+    <string name="et_nombreEmpresa">...</string>
+    <string name="et_direccion">...</string>
+    <string name="et_telefonoEmpresa">...</string>
+    <string name="et_sector">...</string>
 </resources>
