@@ -1,14 +1,34 @@
 <resources>
-    <string name="app_name">Mis trabajos realizados</string>
+    <string name="app_name"> Mis trabajos realizados</string>
     <string name="txt_Contraseña">Introduce la contraseña</string>
-    <string name="et_Contrasena">Solo numeros</string>
+    <string name="et_Contrasena">--------</string>
     <string name="txt_recuperaContra">¿Has olvidado la contraseña?</string>
     <string name="txt_nombreNombreEmpresa">Nombre de la empresa</string>
     <string name="txt_direccion">Direccion de la empresa</string>
     <string name="txt_telefonoEmpresa">Telefono de la empresa</string>
     <string name="txt_sector">Sector de la empresa</string>
-    <string name="et_nombreEmpresa">...</string>
-    <string name="et_direccion">...</string>
-    <string name="et_telefonoEmpresa">...</string>
-    <string name="et_sector">...</string>
+    <string name="et_nombreEmpresa"></string>
+    <string name="et_direccion"></string>
+    <string name="et_telefonoEmpresa"></string>
+    <string name="et_sector"></string>
+    <string name="btn_cancelar">cancelar</string>
+    <string name="btn_validar">validar</string>
+    <string name="btn_servicio">Nuevo servicio</string>
+    <string name="btn_login">Entrar</string>
+    <string name="txt_home">Te encuentras en la pantalla principal</string>
+    <string name="imgPortada">Foto portada</string>
+    <string name="btn_home_nuevo">nuevo</string>
+    <string name="btn_home_borrar">borrar</string>
+    <string name="NuevaEmpresa">Nueva Empresa</string>
+    <string name="NuevoServicio">Nuevo Servicio</string>
+    <string name="NuevoContacto">Nuevo Contacto</string>
+    <string name="txtPrimera"></string>
+    <string name="titulo_formulario_contacto">Formulario para contacto</string>
+    <string name="campo"></string>
+    <string name="nombre_contacto">Nombre del contacto</string>
+    <string name="telefono_contacto">Telefono del contacto</string>
+    <string name="cargo_contacto">Cargo del contacto</string>
+    <string name="correo_contacto">Correo del contacto</string>
+
+
 </resources>

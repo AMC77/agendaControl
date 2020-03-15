@@ -6,53 +6,94 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+
     <TextView
         android:id="@+id/txt_Contraseña"
         android:layout_width="250dp"
         android:layout_height="30dp"
-        android:layout_marginStart="100dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="12dp"
         android:text="@string/txt_Contraseña"
         android:textSize="18sp"
         android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.614"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imgPortada" />
+        app:layout_constraintTop_toBottomOf="@+id/txtPrimera" />
 
     <TextView
         android:id="@+id/txt_recuperaContra"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="100dp"
-        android:layout_marginTop="24dp"
-        android:layout_marginBottom="116dp"
+        android:layout_marginBottom="84dp"
         android:text="@string/txt_recuperaContra"
+        android:textAllCaps="false"
+        android:textStyle="bold|italic"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/et_contrasena"
-        app:layout_constraintVertical_bias="0.212" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
         android:id="@+id/et_contrasena"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="100dp"
         android:layout_marginTop="32dp"
+        android:autofillHints=""
+        android:background="#7EC9EC"
         android:ems="10"
         android:hint="@string/et_Contrasena"
         android:inputType="numberPassword"
+
+
+        android:paddingStart="0sp"
+        android:paddingLeft="0sp"
+        android:paddingTop="7sp"
+        android:paddingEnd="0sp"
+        android:paddingRight="0sp"
+        android:paddingBottom="7sp"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txt_Contraseña"
-        android:autofillHints="" />
+        app:layout_constraintTop_toBottomOf="@+id/txt_Contraseña" />
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:background="#B3F8F2"
+        android:text="@string/btn_login"
+        app:layout_constraintBottom_toTopOf="@+id/txt_recuperaContra"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_contrasena"
+        app:layout_constraintVertical_bias="0.0" />
 
     <ImageView
         android:id="@+id/imgPortada"
-        android:layout_width="248dp"
-        android:layout_height="189dp"
-        android:layout_marginStart="80dp"
-        android:layout_marginTop="36dp"
+        android:layout_width="164dp"
+        android:layout_height="172dp"
+        android:layout_marginTop="60dp"
         android:contentDescription="@string/imgPortada"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.53"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@mipmap/ic_launcher_foreground" />
+        app:srcCompat="@mipmap/ic_launcher" />
+
+    <TextView
+        android:id="@+id/txtPrimera"
+        android:layout_width="250dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="28dp"
+        android:text="@string/txtPrimera"
+        android:textColor="#FA0101"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.614"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgPortada" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
