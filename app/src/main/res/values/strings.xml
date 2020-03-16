@@ -17,7 +17,7 @@
     <string name="btn_login">Entrar</string>
     <string name="txt_home">Te encuentras en la pantalla principal</string>
     <string name="imgPortada">Foto portada</string>
-    <string name="btn_home_nuevo">nuevo</string>
+    <string name="btn_home_insertar">insertar</string>
     <string name="btn_home_borrar">borrar</string>
     <string name="NuevaEmpresa">Nueva Empresa</string>
     <string name="NuevoServicio">Nuevo Servicio</string>

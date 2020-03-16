@@ -20,10 +20,10 @@ public class AdminSQLiteOpenHelper extends SQLiteOpenHelper {
 
         BBDD.execSQL("CREATE TABLE empresas(id_empresa INTEGER PRIMARY KEY AUTOINCREMENT," +
                 "contactoId INTEGER NOT NULL, direccion TEXT NOT NULL, telefono TEXT NOT NULL," +
-                "nombre TEXT NOT NULL, FOREIGN KEY (contacto) REFERENCES contactos(id_contacto))");
+                "nombre TEXT NOT NULL, sector TEXT NOT NULL ,FOREIGN KEY (contactoId) REFERENCES contactos(id_contacto))");
 
         BBDD.execSQL("CREATE TABLE servicios(id_servicio INTEGER PRIMARY KEY AUTOINCREMENT," +
-                "ContactoEmpresa INTEGER NOT NULL, empresaId INTEGER NOT NULL, horas REAL NOT NULL," +
+                "contactoEmpresa INTEGER NOT NULL, empresaId INTEGER NOT NULL, horas REAL NOT NULL," +
                 "direccion TEXT NOT NULL, nombreCliente TEXT," +
                 " FOREIGN KEY (contactoEmpresa) REFERENCES contactos(id_contacto), " +
                 "FOREIGN KEY (empresaId) REFERENCES empresas(id_empresa))");

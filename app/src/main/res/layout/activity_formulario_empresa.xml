@@ -9,10 +9,10 @@
 
     <LinearLayout
         android:id="@+id/linearLayout"
-        android:layout_width="354dp"
-        android:layout_height="325dp"
+        android:layout_width="356dp"
+        android:layout_height="391dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="112dp"
+        android:layout_marginTop="48dp"
         android:layout_marginEnd="16dp"
         android:orientation="vertical"
         app:layout_constraintEnd_toEndOf="parent"
@@ -24,6 +24,7 @@
             android:id="@+id/txt_nombreEmpresa"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-black"
             android:text="@string/txt_nombreNombreEmpresa"
             android:textSize="24sp"
             android:textStyle="bold" />
@@ -35,15 +36,18 @@
             android:autofillHints=""
             android:background="@drawable/bordes"
             android:ems="10"
+            android:fontFamily="casual"
             android:hint="@string/et_nombreEmpresa"
             android:inputType="textPersonName"
-            android:textSize="24sp" />
+            android:padding="1sp"
+            android:textSize="18sp" />
 
         <TextView
             android:id="@+id/txt_direccion"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="12sp"
+            android:fontFamily="sans-serif-black"
             android:text="@string/txt_direccion"
             android:textSize="24sp"
             android:textStyle="bold" />
@@ -55,16 +59,19 @@
             android:autofillHints=""
             android:background="@drawable/bordes"
             android:ems="10"
+            android:fontFamily="casual"
             android:hint="@string/et_direccion"
             android:inputType="textPersonName"
             android:linksClickable="false"
-            android:textSize="24sp" />
+            android:padding="1sp"
+            android:textSize="18sp" />
 
         <TextView
             android:id="@+id/txt_telefonoEmpresa"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="12sp"
+            android:fontFamily="sans-serif-condensed"
             android:text="@string/txt_telefonoEmpresa"
             android:textSize="24sp"
             android:textStyle="bold" />
@@ -76,16 +83,19 @@
             android:autofillHints=""
             android:background="@drawable/bordes"
             android:ems="10"
+            android:fontFamily="casual"
             android:hint="@string/et_telefonoEmpresa"
             android:inputType="textPersonName"
             android:lineSpacingExtra="24sp"
-            android:textSize="24sp" />
+            android:padding="1sp"
+            android:textSize="18sp" />
 
         <TextView
             android:id="@+id/txt_sector"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="12sp"
+            android:fontFamily="sans-serif-black"
             android:text="@string/txt_sector"
             android:textSize="24sp"
             android:textStyle="bold" />
@@ -97,9 +107,31 @@
             android:autofillHints=""
             android:background="@drawable/bordes"
             android:ems="10"
+            android:fontFamily="casual"
             android:hint="@string/et_sector"
             android:inputType="textPersonName"
-            android:textSize="24sp" />
+            android:padding="1sp"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tv_contacto_empresa"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12sp"
+            android:fontFamily="sans-serif-black"
+            android:text="@string/nombre_contacto"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <Spinner
+            android:id="@+id/spinner2"
+            style="@android:style/Widget.DeviceDefault.Spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bordes"
+            android:minWidth="24sp"
+            android:minHeight="32dp"
+            android:spinnerMode="dropdown" />
 
     </LinearLayout>
 
@@ -111,8 +143,10 @@
         android:layout_marginTop="536dp"
         android:layout_marginEnd="16dp"
         android:background="@color/colorPrimaryDark"
+        android:onClick="cancelar"
         android:text="@string/btn_cancelar"
         android:textColor="@color/ic_launcher_background"
+        android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -125,8 +159,11 @@
         android:layout_marginStart="16dp"
         android:layout_marginEnd="16dp"
         android:background="@color/colorPrimaryDark"
-        android:text="@string/btn_validar"
+        android:fontFamily="sans-serif-black"
+        android:onClick="insertarEmpresa"
+        android:text="@string/btn_home_insertar"
         android:textColor="@color/ic_launcher_background"
+        android:textSize="18sp"
         app:layout_constraintBottom_toTopOf="@+id/btn_cancelar"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.35"
