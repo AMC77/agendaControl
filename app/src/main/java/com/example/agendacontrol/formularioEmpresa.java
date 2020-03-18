@@ -42,7 +42,7 @@ public class formularioEmpresa extends AppCompatActivity {
             i++;
         }
 
-        ArrayAdapter <String> adapter= new ArrayAdapter<String>(this,android.R.layout.simple_spinner_item,nombres);
+        ArrayAdapter <String> adapter = new ArrayAdapter<String>(this,android.R.layout.simple_spinner_item,nombres);
         spinner2.setAdapter(adapter);
         BBDD.close();
     }
@@ -54,7 +54,7 @@ public class formularioEmpresa extends AppCompatActivity {
         String direccionEmpresa= direccion.getText().toString();
         String telefonoEmpresa = telefono.getText().toString();
         String sectorEmpresa = sector.getText().toString();
-        String id=null;
+        Integer id=null;
 
 
         AdminSQLiteOpenHelper admin = new AdminSQLiteOpenHelper(this,"administracion",null,1);
@@ -64,7 +64,7 @@ public class formularioEmpresa extends AppCompatActivity {
             ContentValues valores = new ContentValues();
             valores.put("id_empresa",id);
             valores.put("contactoId",idContacto);
-            valores.put("direcccion",direccionEmpresa);
+            valores.put("direccion",direccionEmpresa);
             valores.put("telefono",telefonoEmpresa);
             valores.put("nombre",nombreEmpresa);
             valores.put("sector",sectorEmpresa);

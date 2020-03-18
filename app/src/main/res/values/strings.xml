@@ -29,6 +29,11 @@
     <string name="telefono_contacto">Telefono del contacto</string>
     <string name="cargo_contacto">Cargo del contacto</string>
     <string name="correo_contacto">Correo del contacto</string>
+    <string name="horas">Horas trabajadas</string>
+    <string name="direccion_cliente">Direccion del cliente</string>
+    <string name="nombre_cliente">Nombre del cliente</string>
+    <string name="foto_contacto">foto contacto</string>
+    <string name="text_view_para_mostrar_cosas_en_Blanco">En blanco</string>
 
 
 </resources>
